@@ -93,6 +93,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .medias {
+    position: relative;
     background-color: var(--light-orange);
     border-radius: 10px;
     margin-top: 200px;
@@ -108,6 +109,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .self-intro {
+    position: relative;
     background-color: var(--light-orange);
     padding: 50px 50px 50px 50px;
     border-radius: 20px;
@@ -143,9 +145,10 @@ a, a:hover, a:focus, a:active {
 }
 
 #education-wraper {
+    position: relative;
     background-color: rgb(255, 255, 255, 0.25);
     padding-bottom: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     height: fit-content;
     width: auto;
     display: flex;
@@ -154,6 +157,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #school-photo-container {
+    position: relative;
     width: 800px;
     height: fit-content;
     display: flex;
@@ -161,6 +165,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .school {
+    position: relative;
     margin-top: 20px;
     width: 260px;
     width: 260px;
@@ -187,6 +192,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #projects-wrapper {
+    position: relative;
     height: fit-content;
     width: auto;
     display: grid;
@@ -203,8 +209,9 @@ a, a:hover, a:focus, a:active {
     border-radius: 30px;
 }
 .project-frame:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: 0px 5px 5px 5px rgb(83, 105, 95);
+    transform: scale(1.02, 1.02);
+    -webkit-box-shadow: 3px 3px 3px 3px #FF8080, -9px 5px 15px 5px #71eed3, -7px -5px 15px 5px #6cc026, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 3px 3px 3px 3px #FF8080, -9px 5px 15px 5px #71eed3, -7px -5px 15px 5px #6cc026, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .project-photo {
@@ -380,48 +387,110 @@ a, a:hover, a:focus, a:active {
 }
 
 
-/* The 3D effect */
 
-.effect-3d {
-    grid-template-rows: 210px 250px 20px;
-    text-align: justify;
+
+/**********************/
+/* The rainbow shadow */
+.rainbow-shadow {
+    -webkit-animation: rainbow-shadow 3s linear infinite;
 }
-.card-image {
-    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%);
-}
-.rainbow::after {
-    content:"";
-    background: linear-gradient(45deg,
-    #ff0000 0%, 
-    #ff9a00 10%,
-    #d0de21 20%,
-    #4fdc4a 30%, 
-    #3fdad8 40%,
-    #2fc9e2 50%, 
-    #1c7fee 60%, 
-    #5f15f2 70%, 
-    #ba0cf8 80%, 
-    #fb07d9 90%, 
-    #ff0000 100%  )
-    repeat 0% 0% / 300% 100%;
-    position: absolute;
-    inset: -3px;
-}
-.rainbow::after {
-    border-radius: 16px;
-    filter: blur(8px);
-    transform: translateZ(-1px); /*or z-index */
-    animation: rgb 6s linear infinite;
-}
-@keyframes rainbow {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+
+@-webkit-keyframes rainbow-shadow {
+  from {
+    text-shadow:
+      0.04em 0.04em #ff0000,
+      0.08em 0.08em #ff7f00,
+      0.12em 0.12em #ffff00,
+      0.16em 0.16em #00ff00,
+      0.20em 0.20em #0000ff,
+      0.24em 0.24em #4b0082,
+      0.28em 0.28em #8f00ff;
   }
+  15% {
+    text-shadow:
+      0.04em 0.04em #8f00ff,
+      0.08em 0.08em #ff0000,
+      0.12em 0.12em #ff7f00,
+      0.16em 0.16em #ffff00,
+      0.20em 0.20em #00ff00,
+      0.24em 0.24em #0000ff,
+      0.28em 0.28em #4b0082;
+  }
+  30% {
+    text-shadow:
+      0.04em 0.04em #4b0082,
+      0.08em 0.08em #8f00ff,
+      0.12em 0.12em #ff0000,
+      0.16em 0.16em #ff7f00,
+      0.20em 0.20em #ffff00,
+      0.24em 0.24em #00ff00,
+      0.28em 0.28em #0000ff;
+  }
+  45% {
+    text-shadow:
+      0.04em 0.04em #0000ff,
+      0.08em 0.08em #4b0082,
+      0.12em 0.12em #8f00ff,
+      0.16em 0.16em #ff0000,
+      0.20em 0.20em #ff7f00,
+      0.24em 0.24em #ffff00,
+      0.28em 0.28em #00ff00;
+  }
+  60% {
+    text-shadow:
+      0.04em 0.04em #00ff00,
+      0.08em 0.08em #0000ff,
+      0.12em 0.12em #4b0082,
+      0.16em 0.16em #8f00ff,
+      0.20em 0.20em #ff0000,
+      0.24em 0.24em #ff7f00,
+      0.28em 0.28em #ffff00;
+  }
+  75% {
+    text-shadow:
+      0.04em 0.04em #ffff00,
+      0.08em 0.08em #00ff00,
+      0.12em 0.12em #0000ff,
+      0.16em 0.16em #4b0082,
+      0.20em 0.20em #8f00ff,
+      0.24em 0.24em #ff0000,
+      0.28em 0.28em #ff7f00;
+  }
+  90% {
+    text-shadow:
+      0.04em 0.04em #ff7f00,
+      0.08em 0.08em #ffff00,
+      0.12em 0.12em #00ff00,
+      0.16em 0.16em #0000ff,
+      0.20em 0.20em #4b0082,
+      0.24em 0.24em #8f00ff,
+      0.28em 0.28em #ff0000;
+  }
+  to {
+    text-shadow:
+      0.04em 0.04em #ff0000,
+      0.08em 0.08em #ff7f00,
+      0.12em 0.12em #ffff00,
+      0.16em 0.16em #00ff00,
+      0.20em 0.20em #0000ff,
+      0.24em 0.24em #4b0082,
+      0.28em 0.28em #8f00ff;
+  }
+}
 
 
+/**********************/
+/* Box rainbow shadow */
+
+.box-rainbow-shadow {
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+
+/**********************/
 /*The Floating Bubbles*/
-
 .bubbles {
 	position: absolute;
 	top: 0;
