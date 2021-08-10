@@ -582,7 +582,7 @@ a, a:hover, a:focus, a:active {
 	animation-duration: 20s;
 }
 
-bubbles li:nth-child(10) {
+.bubbles li:nth-child(10) {
 	width: 65px;
 	height: 65px;
 	left: 20%;
@@ -590,7 +590,7 @@ bubbles li:nth-child(10) {
 	animation-duration: 20s;
 }
 
-bubbles li:nth-child(11) {
+.bubbles li:nth-child(11) {
 	width: 15px;
 	height: 15px;
 	left: 30%;
