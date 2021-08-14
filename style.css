@@ -31,6 +31,14 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+}
+
 #header {
     position: relative;
     background: linear-gradient(var(--light-orange), var(--transparent));
@@ -203,9 +211,8 @@ a, a:hover, a:focus, a:active {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: var(--light-orange);
-    padding: 20px;
     width: 300px;
-    margin: 30px 15px 0px 15px;
+    margin: 30px 16px 0px 16px;
     border-radius: 30px;
 }
 .project-frame:hover {
@@ -217,8 +224,7 @@ a, a:hover, a:focus, a:active {
 .project-photo {
     width: 300px;
     height: 300px;
-    border-radius: 30px;
-    box-shadow: 10px 10px var(--purple);
+    border-radius: 30px 30px 0px 0px;
 }
 
 .project-description {
@@ -228,16 +234,31 @@ a, a:hover, a:focus, a:active {
     margin: 10px 20px 0px 20px;
 }
 
-.button {
-    width: 130px;
-    height: 40px;
+
+#blog-info {
+    background: linear-gradient(to left, var(--transparent), rgba(255, 255, 255, 0.8),white, white, white, white);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
     border: none;
+    padding: 0px 30px 0px 30px;
     border-radius: 10px;
     background-color: var(--dark-purple);
     color:white;
     font-size: 25px;
 }
-.button:hover {
+button:hover {
     transform: scale(1.10, 1.10);
 }
 
@@ -493,7 +514,7 @@ a, a:hover, a:focus, a:active {
 /*The Floating Bubbles*/
 .bubbles {
 	position: absolute;
-	top: 0;
+	top: -200;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -507,8 +528,8 @@ a, a:hover, a:focus, a:active {
 	display: block;
     border-radius: 50px;
 	background-color: rgba(255, 255, 255, 0);
-	bottom: -300px;
-	animation: circle 15s infinite;
+	bottom: -550px;
+	animation: circle 30s infinite;
 	transition-timing-function: linear;
 }
 
@@ -586,7 +607,7 @@ a, a:hover, a:focus, a:active {
 	width: 65px;
 	height: 65px;
 	left: 20%;
-	animation-delay: 5.5s;
+	animation-delay: 5s;
 	animation-duration: 20s;
 }
 
@@ -594,7 +615,7 @@ a, a:hover, a:focus, a:active {
 	width: 15px;
 	height: 15px;
 	left: 30%;
-	animation-delay: 5.5s;
+	animation-delay: 4s;
 	animation-duration: 20s;
 }
 
@@ -602,22 +623,11 @@ a, a:hover, a:focus, a:active {
 	0% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0.1);
 	}
 	100% {
 		-webkit-transform: translateY(-1080px) rotate(800deg);
 		transform: translateY(-1080px) rotate(800deg);
         background-color: rgba(255, 255, 255, 0.65);
 	}
-}
-
-
-.container {
-	color: #ffffff;
-	text-align: left;
-	background-color: rgba(0,0,0, 0.15);
-	margin: 10%;
-	padding: 10px;
-	line-height: 2em;
-	
 }
