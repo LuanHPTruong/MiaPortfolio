@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Otomanopee+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Teko&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
         <script src="https://kit.fontawesome.com/a9cfebec94.js" crossorigin="anonymous"></script>
     </head> 
 
@@ -36,129 +37,115 @@
         </header>
 
 
-        <div class="center"><h1 class="headline shake">Hey! It's Mia <span class="wave"> 👋 </span></h1></div>
-
-        <div class="center">
-            <div class="center"><img class="avatar" src="https://drive.google.com/uc?id=1LtrWdq1-TB6O7T1RVoQSvzzDerlVTF6U"></div>
-            <div class="medias">
-                <a href="https://github.com/truongluan303" target="_blank" class="fa fa-linkedin media-icon"></a>
-                <a href="https://www.linkedin.com/in/hoangphucluantruong0812/" target="_blank" class="fa fa-facebook media-icon"></a>
-                <a href="https://www.reddit.com/user/HeyitsLou2303" class="fa fa-instagram media-icon" target="_blank"></a>
-                <a href="https://www.quora.com/profile/Luan-Truong-34" target="_blank" class="fa fa-twitter media-icon"></a>
+        <section id="welcome-screen">
+            <div class="center"><h1 class="headline shake">Hey! It's Mia <span class="wave"> 👋 </span></h1></div>
+            <div class="center">
+                <div class="center"><img class="avatar" src="images/avatar.png"></div>
+                <div class="medias">
+                    <a href="https://github.com/truongluan303" target="_blank" class="fa fa-linkedin media-icon"></a>
+                    <a href="https://www.facebook.com/heo.kimnguu" target="_blank" class="fa fa-facebook media-icon"></a>
+                    <a href="https://www.instagram.com/justmiawhynot/" class="fa fa-instagram media-icon" target="_blank"></a>
+                    <a href="https://www.quora.com/profile/Luan-Truong-34" target="_blank" class="fa fa-twitter media-icon"></a>
+                </div>
             </div>
-        </div>
+        </section>
         
         
-        <p id="about-me" class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44);">About Me</p>
-        <div class="center">
-            <div class="self-intro"> 
-                <p class="text">
-                    I am a 19 year old Computer Science student living in Silicone Valley.
-                    I graduated from De Anza College as a Mathematic major in 2021
-                    and transfered to San José State University to pursue a Computer Science degree.
-                    <br>
-                    I am open to any Software Engineering internship or externship
-                </p>
+        <section id="about-me">
+            <p class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44);">About Me</p>
+            <div class="center">
+                <div class="self-intro"> 
+                    <p class="text">
+                        I am a 19 year old Computer Science student living in Silicone Valley.
+                        I graduated from De Anza College as a Mathematic major in 2021
+                        and transfered to San José State University to pursue a Computer Science degree.
+                        <br>
+                        I am open to any Software Engineering internship or externship
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
         
 
-        <p id="projects" class="bigger-text center rainbow-shadow" style="color: rgb(29, 15, 44); margin-top: 130px;">MY BLOGS</p>
+        <section id="projects">
+            <p class="bigger-text center rainbow-shadow" style="color: rgb(29, 15, 44); margin-top: 130px;">MY BLOGS</p>
+            <div id="projects-wrapper" class="center">
+                <div target="_blank" class="center project-frame" onclick="openInfo(1);">
+                    <img class="project-photo" src="images/image1.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 1
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+                <div target="_blank" class="center project-frame" onclick="openInfo(2);">
+                    <img class="project-photo" src="images/image2.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 2
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+                <div target="_blank" class="center project-frame" onclick="openInfo(3);">
+                    <img class="project-photo" src="images/image3.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 3
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+                <div target="_blank" class="center project-frame" onclick="openInfo(4);">
+                    <img class="project-photo" src="images/image4.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 4
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+                <div target="_blank" class="center project-frame" onclick="openInfo(5);">
+                    <img class="project-photo" src="images/image5.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 5
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+                <div target="_blank" class="center project-frame" onclick="openInfo(6);">
+                    <img class="project-photo" src="images/image6.png">   
+                    <p id="title6" class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Title 6
+                    </p>
+                    <p class="text project-description">
+                        This is a short description of the project
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <div id="projects-wrapper" class="center">
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1vJgU2ick0YTeCpce-ZiekGIH-z2SG50g">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Pathfinding Algorithms Visualizer 
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A visualizer for path finding algorithms including A*, Dijkstra, 
-                    Breadth-First Search, and Depth-First Search.
-                </p>
-                <a href="https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer" target="_blank">
-                    <button class="button bigger-text">Read More</button>
-                </a>
+        <div id="blog-info">
+            <div style="margin: 10px 0px 0px 10px;">
+                <button class="bigger-text" style="font-size: 30px;" onclick="closeInfo()">BACK</button>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1apDudZyTzNkUtc7tQh2Q-g1gEYl3Ugx7">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Sorting Algorithms Visualizer 
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A visualizer for many sorting algorithms including Quick Sort, Insertion Sort, 
-                    Selection Sort, Bubble Sort, and Merge Sort.
-                </p>
-                <a href="https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
-            </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1xc0Fiei3AcWGhqWqqBBGia-0E3tKT2jt">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Social Media on Terminal
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    A simple social media on the terminal. The users can create account,
-                    log in, find people and make friends with each other.
-                </p>
-                <a href="https://github.com/truongluan303/Simple-Social-Media" target="_blank">
-                    <button class="button bigger-text">Read More</button>
-                </a>
-            </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1yjrbrTTWwmZYt_hzvJ2HIBuBWVxw4BoR">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Tic Tac Toe with Unbeatable Bot
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    A Tic Tac Toe game that allows user to play with another player 
-                    or with an unbeatable AI.
-                </p>
-                <a href="https://github.com/truongluan303/Tic-Tac-Toe-Game" target="_blank">
-                    <button class="button bigger-text">Read More</button>
-                </a>
-            </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1GNFHFIO4TXIO4eBPUrvWstj8mu72z4rK">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Sudoku Puzzles Solver
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    Solve a user-input Sudoku using backtracing algorithm.
-                </p>
-                <a href="https://github.com/truongluan303/Sudoku_Solver" target="_blank">
-                    <button class="button bigger-text">Read More</button>
-                </a>
-            </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1wiKQzMtttX1SMk-LUyq1JWs9fLCHVoS0">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Pi Estimate with Visualizer
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A program that visualizes and estimates the value of Pi using the Monte Carlo method.
-                </p>
-                <a href="https://github.com/truongluan303/Pi_Estimate" target="_blank">
-                    <button class="button bigger-text">Read More</button>
-                </a>
+            <div style="margin: 30px 25vw 30px 50px;">
+                <div>
+                <p id="blog-title" class="bigger-text"></p>
+                <p id="blog-content" class="text"></p>
+                </div>
             </div>
         </div>
-        <a class="center" style="margin-top: 35px;" href="https://github.com/truongluan303" target="_blank">
-            <button class="button bigger-text" style="width: 250px; margin-bottom: 100px">Show More</button>
-        </a>
 
 
-        <p id="education" class="bigger-text center" style="color: rgb(29, 15, 44)">Education</p>
+        <section id="education">
+        <p class="bigger-text center" style="color: rgb(29, 15, 44); margin-top: 100px;">Education</p>
         <div id="education-wraper">
             <div id="school-photo-container">
                 <a href="https://www.uef.edu.vn/" target="_blank"><img class="school" 
-                    src="https://drive.google.com/uc?id=1Y5NGzfCxrenqbhAym6x6X9U3crI_HsEZ"></a>
+                    src="images/uef.png"></a>
                 <div class="school-description">
                     <p class="bigger-text school-name">UNIVERSITY of ECONOMIS & FINANCES</p>
                     <p class="text">
@@ -170,5 +157,6 @@
                 </div>
             </div>
         </div>
+        </section>
     </body>
 </html>
