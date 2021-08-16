@@ -181,9 +181,11 @@ a, a:hover, a:focus, a:active {
     border-width: 13px;
     border-style: solid;
     border-radius: 10%;
+    transition: 0.4s;
 }
 .school:hover {
-    border-color: var(--purple);
+    border-color: rgb(243, 255, 216);
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff784, 0 0 30px #fff784, 0 0 40px #fff784, 0 0 50px #fff784;
 }
 
 .school-name {
@@ -214,9 +216,10 @@ a, a:hover, a:focus, a:active {
     width: 300px;
     margin: 30px 16px 0px 16px;
     border-radius: 30px;
+    transition: 0.4s;
 }
 .project-frame:hover {
-    transform: scale(1.02, 1.02);
+    transform: scale(1.03, 1.03);
     -webkit-box-shadow: 3px 3px 3px 3px #FF8080, -9px 5px 15px 5px #71eed3, -7px -5px 15px 5px #6cc026, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 3px 3px 3px 3px #FF8080, -9px 5px 15px 5px #71eed3, -7px -5px 15px 5px #6cc026, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
 }
